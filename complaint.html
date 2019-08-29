@@ -1,0 +1,50 @@
+<html>
+<script language="javascript">
+function check()
+{
+alert("Complaint Registered Successfully");
+}
+function x()
+{
+var q=confirm("Are u sure want to cancel");
+if(q==true)
+{
+window.location.href="user portal.html";
+}
+else
+{
+window.location.href="complaint.html"
+}}
+function goback()
+{
+window.history.back()
+}
+</script>
+<font face="script mt bold" color="orange" >
+<h1><center><font face="monotype corsiva" color="black" size=6>PUBLIC HEALTH MANAGEMENT SYSTEM</center></h1>
+<body background="j.jpg">
+<center><table width=700 height=300>
+<tr>
+<td>
+<form name="forms" onsubmit="return check()" action="complaint.php" method="post">
+<fieldset><legend align="center">COMPLAINT FORM</legend>
+<font color="black" size=4>&nbsp&nbsp&nbsp&nbsp&nbsp Type of Complaint&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select name="msg1">
+<option>Disease</option>
+<option>Prevention</option>
+<option>Sanitation</option>
+<option>Camps</option>
+<option>Facilities</option>
+</select><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbspDescription of the Complaint &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<textarea maxlength="100" required size=100 rows=5 cols=30 name="msg2" placeholder="Describe your Complaint"></textarea><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnter your Queries ???? &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<textarea maxlegth="100" required rows=5 cols=30 name="msg3" placeholder="Tell about what you want to know??"></textarea><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnter your request &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<textarea maxlength="100" required rows=5 cols=30 name="msg4" placeholder="Request us whatever you want!!!"></textarea><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="submit" value="Submit">
+<input type="reset" name="msg6" value="Reset">&nbsp&nbsp<input type="button" onclick="goback()" name="msg7" value="Back"><br><br><br><br></fieldset>
+</form><br><br>
+</form>
+</body>
+</html>
